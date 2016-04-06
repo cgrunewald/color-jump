@@ -1,0 +1,24 @@
+{
+  "name": "color-jump",
+  "authors": [
+    "calvin <calvin.grunewald@gmail.com>"
+  ],
+  "description": "Color Jump Game",
+  "main": "app.js",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "three.js": "0.74.0",
+    "jquery": "^2.2.3"
+  }
+}

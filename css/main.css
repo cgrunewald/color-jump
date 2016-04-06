@@ -1,0 +1,126 @@
+/**
+Copyright 2016 - Present Calvin Grunewald. All Rights Reserved.
+
+This file is part of Color Jump.
+
+Color Jump is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Color Jump is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Color Jump.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+
+.colorBlue {
+  background-color: #0000FF;
+}
+
+.colorYellow {
+  background-color: #FFFF00;
+}
+
+.colorGreen {
+  background-color: #00FF00;
+}
+
+.colorRed {
+  background-color: #FF0000;
+}
+
+.block {
+  display: block;
+  width: 5vh;
+  height: 5vh;
+  margin: 4px;
+  border: 4px solid #0b1324;
+}
+
+#gameBar {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, .80);
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nextColors {
+  display: flex;
+  flex-direction: row;
+  align-items: 'center';
+}
+
+#score {
+  padding-left: 10px;
+  color: white;
+  font-size: 1.2em;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, .85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-back {
+  text-align: left;
+}
+
+#menu {
+  text-align: center;
+  padding: 20px;
+  background-color: #0b1324;
+  border-radius: 3px;
+  width: 40%;
+  min-width: 300px;
+  height: 400px;
+  color: white;
+}
+
+#menu > h1 {
+  margin-bottom: 24px;
+}
+
+#menu-items {
+  list-style-type: none;
+}
+
+#menu-items li {
+  display: block;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+#menu-items li:hover {
+  background-color: #030408;
+}
